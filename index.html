@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Géographie</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<h1>Géographie</h1>
+<h2>Glisser-déposer les pays depuis la boite de gauche vers leur emplacement sur la carte</h2>
+<div id="boite"></div>
+<div id="boiteRussie"></div>
+<div id="titre"></div>
+<div id ="boiteScore">
+<h3>Score</h3>
+<p><span id="score">0</span> / 39<p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="js/control.js"></script>
+<script src="js/ion.sound.js"></script>
+<script>
+$(function(){
+	$('body').append('<footer><p id="infosSvg">Fichier SVG par maix, CC-BY-SA 2.5 / <a href="https://commons.wikimedia.org/wiki/File:Blank_map_of_Europe.svg">Wikimedia Commons</a></span></p><h6>Frontières utilisées pour le SVG : 4 février 2007</h6></footer>');
+});
+</script>
+</body>
+</html>
