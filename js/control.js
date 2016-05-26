@@ -81,15 +81,15 @@ $(function(){
 				if(ajout == 39){
 					$.colorbox({html: function(){
   					if (score == 39) {
-  					return '<img src="/drag/images/etoile5.png"/><span class="score">Score</span><img src="/drag/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
+  					return '<img src="/dev/dragndrop/images/etoile5.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
 						} else if (score < 39 && score >= 35) {
-  					return '<img src="/drag/images/etoile4.png"/><span class="score">Score</span><img src="/drag/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
+  					return '<img src="/dev/dragndrop/images/etoile4.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
 						} else if (score < 35 && score >= 25) {
-  					return '<img src="/drag/images/etoile3.png"/><span class="score">Score</span><img src="/drag/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
+  					return '<img src="/dev/dragndrop/images/etoile3.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
 						} else if (score < 25 && score >= 15) {
-  					return '<img src="/drag/images/etoile2.png"/><span class="score">Score</span><img src="/drag/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
+  					return '<img src="/dev/dragndrop/images/etoile2.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
 						} else if (score < 15) {
-  					return '<img src="/drag/images/etoile.png"/><span class="score">Score</span><img src="/drag/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
+  					return '<img src="/dev/dragndrop/images/etoile.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
 						}},
 						width : '500px',
 						height : '150px'    
@@ -104,15 +104,15 @@ $(function(){
 					$.colorbox({
 						html: function(){
   					if (score == 39) {
-  					return '<img src="/drag/images/etoile5.png"/><span class="score">Score</span><img src="/drag/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
+  					return '<img src="/dev/dragndrop/images/etoile5.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
 						} else if (score < 39 && score >= 35) {
-  					return '<img src="/drag/images/etoile4.png"/><span class="score">Score</span><img src="/drag/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
+  					return '<img src="/dev/dragndrop/images/etoile4.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
 						} else if (score < 35 && score >= 25) {
-  					return '<img src="/drag/images/etoile3.png"/><span class="score">Score</span><img src="/drag/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
+  					return '<img src="/dev/dragndrop/images/etoile3.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
 						} else if (score < 25 && score >= 15) {
-  					return '<img src="/drag/images/etoile2.png"/><span class="score">Score</span><img src="/drag/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
+  					return '<img src="/dev/dragndrop/images/etoile2.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
 						} else if (score < 15) {
-  					return '<img src="/drag/images/etoile.png"/><span class="score">Score</span><img src="/drag/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
+  					return '<img src="/dev/dragndrop/images/etoile.png"/><span class="score">Score</span><img src="/dev/dragndrop/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
 						}},
 						width : '500px',
 						height : '150px'  
