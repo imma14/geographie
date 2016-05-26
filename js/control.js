@@ -6,6 +6,7 @@ https://github.com/imma14
 *********************/
 
 $(function(){
+	var ajout = 0;
 	function shuffle(a) {
 		  var j, x, i;
 		  for (i = a.length; i; i -= 1) {
@@ -76,10 +77,47 @@ $(function(){
 				target.attr({fill : "#88C574", stroke:"#88C574"});
 				ion.sound.play("button_tiny");
 				score++;
-		$('#score').text(score);
+				ajout++;
+				if(ajout == 39){
+					$.colorbox({html: function(){
+  					if (score == 39) {
+  					return '<img src="/drag/images/etoile5.png"/><span class="score">Score</span><img src="/drag/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
+						} else if (score < 39 && score >= 35) {
+  					return '<img src="/drag/images/etoile4.png"/><span class="score">Score</span><img src="/drag/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
+						} else if (score < 35 && score >= 25) {
+  					return '<img src="/drag/images/etoile3.png"/><span class="score">Score</span><img src="/drag/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
+						} else if (score < 25 && score >= 15) {
+  					return '<img src="/drag/images/etoile2.png"/><span class="score">Score</span><img src="/drag/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
+						} else if (score < 15) {
+  					return '<img src="/drag/images/etoile.png"/><span class="score">Score</span><img src="/drag/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
+						}},
+						width : '500px',
+						height : '150px'    
+					});
+				}
+				$('#score').text(score);
 			} else {
 				target.attr({fill : "#DF6E6E", stroke:"#DF6E6E"});
 				ion.sound.play("tap");
+				ajout++;
+				if(ajout == 39){
+					$.colorbox({
+						html: function(){
+  					if (score == 39) {
+  					return '<img src="/drag/images/etoile5.png"/><span class="score">Score</span><img src="/drag/images/etoile5.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Score parfait !!</p>';
+						} else if (score < 39 && score >= 35) {
+  					return '<img src="/drag/images/etoile4.png"/><span class="score">Score</span><img src="/drag/images/etoile4.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Presque parfait, ça vaut le coup de re-tenter...</p>';
+						} else if (score < 35 && score >= 25) {
+  					return '<img src="/drag/images/etoile3.png"/><span class="score">Score</span><img src="/drag/images/etoile3.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Pas mal, encore un peu de pratique ?</p>';
+						} else if (score < 25 && score >= 15) {
+  					return '<img src="/drag/images/etoile2.png"/><span class="score">Score</span><img src="/drag/images/etoile2.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>Il faut réviser un peu la géographie européenne, on dirait...</p>';
+						} else if (score < 15) {
+  					return '<img src="/drag/images/etoile.png"/><span class="score">Score</span><img src="/drag/images/etoile.png"/><br/><span class="total">' + score + ' / 44</span><br/><p>La géographie, c\'est pas ton truc, non ?</p>';
+						}},
+						width : '500px',
+						height : '150px'  
+				});
+				}
 			}   
 			// On utilise l'index pour récupérer les prochains draggables et titres et les faire apparaitre
 			if(index > 0) {
@@ -114,22 +152,21 @@ $(function(){
 		}; 
 		// On rend tout ça draggable
 		draggable.drag(movePath, startPath, upPath);
-
 		});
 	});
-ion.sound({
-    sounds: [
-        {
-            name: "button_tiny"
-        },
-				{
-            name: "tap"
-        }
-    ],
-    volume:0.5,
-    path: "sounds/",
-    preload: true
-});
+	ion.sound({
+		  sounds: [
+		      {
+		          name: "button_tiny"
+		      },
+					{
+		          name: "tap"
+		      }
+		  ],
+		  volume:0.5,
+		  path: "sounds/",
+		  preload: true
+	});
 });
 
 
